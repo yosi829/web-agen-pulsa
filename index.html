@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agen Pulsa PPOB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Agen Pulsa & PPOB</h1>
+  <p>Layanan cepat & terpercaya</p>
+</header>
+
+<section class="input-section">
+  <input type="text" id="phone" placeholder="Masukkan nomor HP / ID Pelanggan">
+  <div id="provider"></div>
+</section>
+
+<nav class="kategori">
+  <button onclick="filterProduk('pulsa')">Pulsa</button>
+  <button onclick="filterProduk('data')">Paket Data</button>
+  <button onclick="filterProduk('pln')">Token PLN</button>
+</nav>
+
+<section id="produkList" class="produk-list"></section>
+
+<!-- LOADING -->
+<div id="loading" class="loading hidden">
+  <div class="spinner"></div>
+  <p>Memproses transaksi...</p>
+</div>
+
+<!-- HASIL -->
+<div id="result" class="result hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
